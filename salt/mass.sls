@@ -12,9 +12,11 @@ base:
     - refresh: True
     - pkgs:
       - maas
+      - maas-dns
+      - maas-dhcp
 
 #Configure MaaS server
 Configure Maas Server:
   cmd.run:
-    - name: /srv/salt/mass_configure_script.sh
+    - name: /srv/salt/maas_configure_script.sh
     - cwd: /

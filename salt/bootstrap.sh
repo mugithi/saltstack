@@ -15,7 +15,7 @@ sudo apt-get install -y vim
 
 # install salt-master and other salt related stuff
 echo "Installing salt-master"
-sudo apt-get install salt-api salt-cloud salt-master salt-minion salt-ssh salt-syndic -y
+sudo apt-get install salt-master salt-minion  -y
 
 # configure master file
 echo "Configure master file"
@@ -39,4 +39,5 @@ sudo salt-minion -d
 sleep 15
 sudo salt-key -y -A
 
+sleep 15
 sudo salt '*' state.highstate
