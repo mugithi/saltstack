@@ -23,11 +23,8 @@ maas $PROFILE subnet update 192.168.45.0/24 dns_servers=8.8.8.8
 maas $PROFILE fabric update 0 name=fab-management
 maas $PROFILE fabric update 1 name=fab-external
 
-#Configure space 
-
-
-
-
+#Configure space
+#TODO Finish configuration on Spaces
 #Configure Subnets
 
 uuid=$(maas $PROFILE node-groups list | grep uuid | cut -d\" -f4)
