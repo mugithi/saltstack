@@ -19,6 +19,6 @@ vagrant up
 
 ### Getting Other Virtual Machines PXE Booted using Virtual Box Scripts
 
-[https://github.com/mugithi/saltstack/tree/master/node-0x](Instructions)
+[Instructions](https://github.com/mugithi/saltstack/tree/master/node-0x)  on how to create VMs.
 
 TODO MAAS configuration script to deploy Salt Minions
