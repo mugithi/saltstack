@@ -1,5 +1,5 @@
 #!/bin/bash
-isthere=`vboxmanage list runningvms | grep $1 | awk '{print $1}' |  sed -e 's/^"//' -e 's/"$//'`
+isthere=`vboxmanage list vms | grep $1 | awk '{print $1}' |  sed -e 's/^"//' -e 's/"$//'`
 if [ "$isthere" = "$1" ]; then
   VBoxManage controlvm $1 poweroff
   sleep 5
